@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kotlin Development</string>
+    <string name="password">Password</string>
+    <string name="farmerid">FarmerId</string>
+    <string name="username">UserName</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="change_password">Change Password</string>
+</resources>

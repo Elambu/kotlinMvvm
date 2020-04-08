@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+                name="viewModel"
+                type="com.example.kotlindevelopment.ui.viewmodel.LoginFragmentViewModel" />
+    </data>
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:background="@color/cardview_dark_background"
+            android:layout_height="match_parent"
+            >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+        >
+            <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_helpline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/margin_xnormal"
+                    android:layout_marginEnd="@dimen/margin_xnormal"
+                    android:background="@drawable/solid_white_circle"
+                    android:padding="@dimen/margin_medium"
+                    android:src="@drawable/ic_call"
+                    android:layout_marginRight="@dimen/margin_xnormal"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_helpline"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_xlarge"
+                        android:layout_marginEnd="@dimen/margin_xlarge"
+                        android:src="@drawable/ic_olam_do" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_llmedium"
+                        android:text="@string/username"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_semilarge" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_enter_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/farmerid"
+                        android:layout_marginTop="@dimen/margin_large_medium"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_xmedium" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_lead_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="@dimen/margin_xlarge"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:layout_marginEnd="@dimen/margin_xlarge"
+                        android:background="@drawable/solid_white_rounded"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="8"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/margin_xnormal"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:paddingEnd="@dimen/margin_xnormal"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_semimedium" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/enter_passs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/password"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_xmedium" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_xlarge"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:layout_marginEnd="@dimen/margin_xlarge"
+                        android:background="@drawable/solid_white_rounded"
+                        android:gravity="center"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/margin_xnormal"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:paddingEnd="@dimen/margin_xnormal"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_normal" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_login"
+                        android:layout_width="@dimen/login_btn"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_large_medium"
+                        android:background="@drawable/bg_button_rounded"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/margin_xnormal"
+                        android:paddingBottom="@dimen/margin_xnormal"
+                        android:text="@string/login"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_semimedium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_xnormal"
+                        android:text="@string/forgot_password"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_semimedium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_change_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_xnormal"
+                        android:text="@string/change_password"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_semimedium"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
